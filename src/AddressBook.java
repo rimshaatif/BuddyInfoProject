@@ -14,10 +14,14 @@ public class AddressBook  {
         list.remove(buddy);
     }
 
-    public static void main(String[] args) {
+    public void print(){
         System.out.println("This is the Address Book:");
+    }
+    public static void main(String[] args) {
+
         BuddyInfo buddy = new BuddyInfo("Bob", "Parliament Hill", 123456789);
         AddressBook ab = new AddressBook();
+        ab.print();
         ab.addBuddy(buddy);
         ab.removeBuddy(buddy);
 
